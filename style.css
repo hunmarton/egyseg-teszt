@@ -1,0 +1,358 @@
+@import url("https://fonts.googleapis.com/css?family=Pontano+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sarina&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+:root {
+  --mainColor: #8a191b;
+  --white: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background: #e8d1d1;
+}
+
+header {
+  background: rgba(138, 25, 27, 1);
+  height: 100vh;
+  position: relative;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+
+  padding-top: 70px;
+}
+
+nav ul li a {
+  color: #f3e7e7;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 40px;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  /* text-shadow: 0 0 5px var(--mainColor); */
+  color: #e8d1d1;
+}
+
+.header-pic {
+  width: 70%;
+  margin: 0 auto;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
+    url(img/egyseg-szinpad.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 75vh;
+  position: absolute;
+  bottom: 0;
+  border: 30px solid rgba(255, 255, 255, 0.8);
+  border-top: 30px solid #e8d1d1;
+  border-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-pic h2 {
+  color: var(--white);
+  font-size: 3rem;
+  margin: 15px 0;
+}
+
+.header-pic h1 {
+  color: var(--white);
+  font-size: 3rem;
+}
+
+.header-pic h1 span {
+  font-family: "Sarina", cursive;
+  font-size: 5rem;
+  padding: 40px;
+}
+
+.rolunk {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.rolunk h2 {
+  font-family: "Sarina", cursive;
+  color: var(--mainColor);
+  font-size: 3rem;
+}
+
+.rolunk .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: -30px;
+}
+
+.rolunk .text {
+  flex: 0 0 100%;
+  padding-top: 60px;
+  font-size: 1.2rem;
+  color: var(--mainColor);
+}
+
+.rolunk .text p {
+  text-align: justify;
+}
+.rolunk .text p span {
+  font-style: italic;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.rolunk .img {
+  margin-top: 60px;
+  display: flex;
+  flex: 0 0 31%;
+  justify-content: center;
+}
+
+.rolunk img {
+  width: 100%;
+  height: auto;
+  outline: #8a191b 8px solid;
+}
+
+footer {
+  background: var(--mainColor);
+  text-align: center;
+  color: var(--white);
+  padding: 30px 0;
+}
+
+/***********
+Kapcsolat
+************/
+.kapcsolat {
+  padding: 60px 0;
+}
+
+.kapcsolat h2 {
+  font-family: "Sarina", cursive;
+  color: var(--mainColor);
+  font-size: 3rem;
+  text-align: center;
+}
+
+.kapcsolat form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+.kapcsolat label {
+  color: var(--mainColor);
+  font-size: 1.1rem;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.kapcsolat form input,
+.kapcsolat form textarea {
+  width: 700px;
+  padding: 10px;
+  border: 0;
+  font-family: "Open Sans", sans-serif;
+  color: var(--mainColor);
+}
+
+.kapcsolat form input:focus,
+.kapcsolat form textarea:focus {
+  outline: none;
+}
+
+.kapcsolat form input::placeholder,
+.kapcsolat form textarea::placeholder {
+  color: var(--mainColor);
+}
+
+.kapcsolat form input[type="submit"] {
+  width: 250px;
+  margin-top: 30px;
+  background: var(--mainColor);
+  color: var(--white);
+  transition: 0.5s ease;
+}
+
+.kapcsolat form input[type="submit"]:hover {
+  color: var(--mainColor);
+  background: var(--white);
+  cursor: pointer;
+}
+
+.kapcsolat .szemely .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  padding-top: 30px;
+}
+
+.kapcsolat .szemely .row .single {
+  flex: 0 0 48%;
+  padding: 30px;
+}
+
+.kapcsolat .szemely .row .single p {
+  line-height: 1.6;
+}
+
+.kapcsolat .szemely .row .single strong {
+  color: var(--mainColor);
+  font-size: 1.1rem;
+}
+/***********
+alosztalyok
+************/
+.alosztaly {
+  padding: 60px 0;
+}
+.alosztaly h2 {
+  font-family: "Sarina", cursive;
+  color: var(--mainColor);
+  font-size: 3rem;
+  text-align: center;
+}
+.alosztaly p {
+  color: var(--mainColor);
+  padding: 30px 0 50px 0;
+  text-align: justify;
+}
+.alosztaly .osztalyok {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.alosztaly .osztalyok article {
+  flex: 0 0 48%;
+  width: 400px;
+  height: 300px;
+  position: relative;
+  transition: 0.2s ease;
+  opacity: 0.8;
+  margin-bottom: 70px;
+  overflow: hidden;
+  box-shadow: 0 0 15px black;
+}
+.alosztaly .osztalyok article img {
+  width: 100%;
+  height: 100%;
+}
+.alosztaly .osztalyok article:hover {
+  opacity: 1;
+  outline: 8px var(--mainColor) solid;
+  transform: scale(1.03);
+}
+.alosztaly .osztalyok article p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 10px 10px;
+  background: var(--mainColor);
+  color: white;
+}
+/************
+Esemenyek
+************/
+.esemenyek {
+  padding: 60px 0;
+}
+.esemenyek h2 {
+  font-family: "Sarina", cursive;
+  color: var(--mainColor);
+  font-size: 3rem;
+  text-align: center;
+}
+.esemenyek .esemeny {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 50px 0;
+  flex: 0 0 30%;
+}
+.esemenyek .esemeny article {
+  width: 200px;
+  height: 300px;
+  display: inline-block;
+  transition: 0.2s ease;
+  margin-bottom: 70px;
+  box-shadow: 0 0 15px black;
+}
+.esemenyek .esemeny article:hover {
+  transform: scale(1.05);
+}
+.esemenyek .esemeny article img {
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 760px) {
+  nav ul li a {
+    margin: 5px;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+  }
+  .container {
+    width: 90%;
+  }
+  header .container {
+    width: 100%;
+  }
+  .header-pic {
+    border: none;
+    width: 100%;
+    margin: 0;
+  }
+  .header-pic h1 {
+    font-size: 2rem;
+  }
+  .header-pic h1 span {
+    font-size: 2rem;
+  }
+  .header-pic h2 {
+    font-size: 2rem;
+  }
+  .rolunk .img {
+    display: none;
+  }
+  .alosztaly h2 {
+    font-size: 2.5rem;
+  }
+  .alosztaly .osztalyok article {
+    width: 300px;
+    height: 200px;
+    opacity: 1;
+    outline: 8px var(--mainColor) solid;
+  }
+  .kapcsolat form input,
+  .kapcsolat form textarea {
+    width: 90%;
+  }
+  .kapcsolat .szemely .row .single {
+    flex: 0 0 100%;
+}
