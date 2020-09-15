@@ -34,7 +34,6 @@ nav ul {
   display: flex;
   list-style: none;
   justify-content: center;
-
   padding-top: 70px;
 }
 
@@ -320,6 +319,10 @@ Esemenyek
   .container {
     width: 90%;
   }
+  header {
+    height: 85vh;
+    transition: 0.4s ease-in-out;
+  }
   header .container {
     width: 100%;
   }
@@ -355,4 +358,53 @@ Esemenyek
   }
   .kapcsolat .szemely .row .single {
     flex: 0 0 100%;
+  }
+  .hamburger {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: flex;
+    align-items: center;
+  }
+  .line {
+    background: #f3e7e7;
+    width: 30px;
+    height: 4px;
+    display: block;
+    border-radius: 2px;
+  }
+  .line::after {
+    background: #f3e7e7;
+    width: 30px;
+    height: 4px;
+    display: block;
+    position: absolute;
+    content: "";
+    margin-top: 10px;
+    border-radius: 2px;
+  }
+  .line::before {
+    background: #f3e7e7;
+    width: 30px;
+    height: 4px;
+    display: block;
+    position: absolute;
+    content: "";
+    margin-top: 20px;
+    border-radius: 2px;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(-100%);
+    transition: 0.4s ease-in-out;
+    padding-top: 30px;
+  }
+  .activate {
+    transform: translateY(0%);
+  }
+  .header-activate {
+    height: 100vh;
+  }
 }
