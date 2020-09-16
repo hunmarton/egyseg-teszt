@@ -305,7 +305,8 @@ Esemenyek
   display: inline-block;
   transition: 0.2s ease;
   margin-bottom: 70px;
-  box-shadow: 0 0 15px black;
+  box-shadow: 0 0 15px #d1a4a4;
+  padding: 10px;
 }
 .esemenyek .esemeny article:hover {
   transform: scale(1.05);
@@ -468,6 +469,9 @@ aside {
   }
   .kapcsolat .szemely .row .single {
     flex: 0 0 100%;
+  }
+  .esemenyek .esemeny article {
+    padding: 5px;
   }
   .hamburger {
     margin-top: 5px;
