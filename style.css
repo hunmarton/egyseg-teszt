@@ -310,6 +310,105 @@ Esemenyek
   width: 100%;
   height: 100%;
 }
+/*********
+Blog
+**********/
+.blog {
+  padding: 60px 0;
+  color: var(--mainColor);
+}
+.blog h2 {
+  font-family: "Sarina", cursive;
+  color: var(--mainColor);
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.blog-page {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.posts {
+  flex: 0 0 65%;
+}
+aside {
+  flex: 0 0 30%;
+}
+.widget {
+  border: 6px var(--mainColor) solid;
+  padding: 20px 10px 20px 20px;
+  margin-bottom: 30px;
+}
+.widget h3 {
+  font-family: "Sarina", cursive;
+  color: var(--mainColor);
+  margin-bottom: 10px;
+}
+.widget ul {
+  list-style-type: none;
+}
+.widget ul li {
+  margin-bottom: 5px;
+}
+.widget ul li a {
+  color: var(--mainColor);
+  text-decoration: none;
+}
+.widget ul li a:hover {
+  text-decoration: underline;
+}
+
+article {
+  margin-bottom: 30px;
+}
+.featured-image {
+  width: 100%;
+}
+.featured-image img {
+  width: 100%;
+}
+.blog-cim {
+  font-size: 1.3rem;
+  font-family: "Sarina", cursive;
+  color: var(--mainColor);
+  margin: 15px 0;
+}
+.szoveg p {
+  text-align: justify;
+}
+.szoveg a {
+  padding: 10px 20px;
+  margin-top: 20px;
+  display: inline-block;
+  background: var(--mainColor);
+  color: var(--white);
+  transition: 0.5s ease;
+  text-decoration: none;
+}
+.szoveg a:hover {
+  color: var(--mainColor);
+  background: var(--white);
+  cursor: pointer;
+}
+.meta p {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.single {
+  color: var(--mainColor);
+}
+.single h2 {
+  font-family: "Sarina", cursive;
+  color: var(--mainColor);
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.single .blog-page {
+  margin-top: 30px;
+}
+
 @media (max-width: 760px) {
   nav ul li a {
     margin: 5px;
@@ -360,11 +459,13 @@ Esemenyek
     flex: 0 0 100%;
   }
   .hamburger {
+    margin-top: 5px;
     position: absolute;
     top: 15px;
     right: 15px;
     display: flex;
     align-items: center;
+    transition: 0.4s ease-in-out;
   }
   .line {
     background: #f3e7e7;
@@ -404,7 +505,17 @@ Esemenyek
   .activate {
     transform: translateY(0%);
   }
+  .icon-active {
+    transform-origin: 50% 50%;
+    transform: rotate(90deg);
+  }
   .header-activate {
     height: 100vh;
+  }
+  .posts {
+    flex: 0 0 100%;
+  }
+  aside {
+    flex: 0 0 100%;
   }
 }
