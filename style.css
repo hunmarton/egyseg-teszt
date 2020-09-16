@@ -521,7 +521,7 @@ aside {
     transform: rotate(90deg);
   }
   .header-activate {
-    height: 105vh;
+    height: 110vh;
   }
   .posts {
     flex: 0 0 100%;
